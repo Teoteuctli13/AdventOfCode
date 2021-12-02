@@ -15,7 +15,7 @@ namespace AdventOfCode
         }
         public string ReadFile(string inputFile)
         {
-            using (StreamReader streamReader = new StreamReader(Folder+inputFile))
+            using (StreamReader streamReader = new StreamReader(Path.Combine(Folder,inputFile)))
             {
                 string fileContent = streamReader.ReadToEnd();
                 return fileContent;
