@@ -23,4 +23,31 @@ namespace AdventOfCode
         }
 
     }
+    public class Submarine
+    {
+        private int XPosition = 0;
+        private int YPosition = 0;
+        private int Aim = 0;
+
+        public (int, int) GetPosition()
+        {
+            return (XPosition, YPosition);
+        }
+        public int GetAim()
+        {
+            return Aim;
+        }
+        public void SetAim(int aimChange)
+        {
+            Aim += aimChange;
+        }
+        public void SetXPosition(int xChange)
+        {
+            XPosition += xChange;
+        }
+        public void SetYPosition(int yChange)
+        {
+            YPosition += yChange;
+        }
+    }
 }
