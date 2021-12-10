@@ -7,8 +7,8 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             //https://adventofcode.com/2021/day/2
-            var d2 = new Day2();
-            d2.Challenge2();
+            var d3 = new Day3();
+            d3.Challenge1();
         }
     }
 }

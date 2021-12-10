@@ -50,4 +50,31 @@ namespace AdventOfCode
             YPosition += yChange;
         }
     }
+
+    public class DiagnosticReport
+    {
+        private Utilities utilities = new();
+        private int[,] report;
+        public DiagnosticReport()
+        {
+            string input = utilities.ReadFile("Day3.txt");
+            List<string> lines = input.Split("\r\n").ToList();
+            int yLength = lines.Count();
+            int xLength = lines[0].Length;
+            report = new int[xLength, yLength];
+            for (int i = 0; i < lines.Count-1; i++)
+            {
+                for (int j = 0; j < lines[0].Length-1; j++)
+                {
+                    report[j, i] = int.Parse(lines[i][j].ToString());
+                }
+
+            }
+        }
+
+        public int[,] GetReport()
+        {
+            return report;
+        }
+    }
 }
