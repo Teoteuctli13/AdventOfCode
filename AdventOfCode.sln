@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022", "AdventOfCode2022\AdventOfCode2022.csproj", "{4A8232D4-5826-426C-9AF5-D798896B3AC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templates", "Templates\Templates.csproj", "{553038A1-588E-48F9-8B27-C7EBDFA0B913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4A8232D4-5826-426C-9AF5-D798896B3AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8232D4-5826-426C-9AF5-D798896B3AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8232D4-5826-426C-9AF5-D798896B3AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553038A1-588E-48F9-8B27-C7EBDFA0B913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553038A1-588E-48F9-8B27-C7EBDFA0B913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553038A1-588E-48F9-8B27-C7EBDFA0B913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553038A1-588E-48F9-8B27-C7EBDFA0B913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
