@@ -361,4 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
 /Utilities/sessionId.txt
+
+
+*_input_*.txt
+
+*_output_*.txt
