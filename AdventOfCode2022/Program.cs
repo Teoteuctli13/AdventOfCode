@@ -1,4 +1,4 @@
-﻿using AdventOfCode2022.Day2;
+﻿using AdventOfCode2022.Day1;
 
-Day2.CalculateA();
-Day2.CalculateB();
+Day1.CalculateA();
+//Day2.CalculateB();
