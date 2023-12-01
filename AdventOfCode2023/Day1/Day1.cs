@@ -13,21 +13,27 @@ namespace AdventOfCode2023.Day1
 
         public static void CalculateA()
         {
-            var input = IO.ReadInputFileStringArray(day, "a");
+            // Read the input from the file
+            string[] lines = IO.ReadInputFileStringArray(day, "a");
 
-            int sum = 0;
-            foreach (var item in input)
+            int result = 0;
+
+            // Loop through each line
+            foreach (string line in lines)
             {
-                int a = 0;
-                int b = 0;
-                var tmpStr = new String(item.Where(Char.IsDigit).ToArray());
-                a = int.Parse(tmpStr[0].ToString()) * 10;
-                b = int.Parse(tmpStr[^1].ToString());
-                sum += a+b;
+                // Find the first and last digit in the line
+                int firstDigit = line.First(char.IsDigit) - '0';
+                int lastDigit = line.Last(char.IsDigit) - '0';
+
+                // Concatenate the first and last digit and add them
+                int sum = int.Parse(firstDigit.ToString() + lastDigit.ToString());
+
+                // Add the sum to the result
+                result += sum;
             }
 
-            int result = sum;
-            IO.WriteOutput(day, "a", result);
+            // Write the result to the output
+            IO.WriteOutput(day, "a", result.ToString());
         }
         public static void CalculateB()
         {
