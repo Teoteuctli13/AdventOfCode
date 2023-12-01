@@ -37,35 +37,19 @@ namespace AdventOfCode2023.Day1
             int sum = 0;
             foreach (var item in input)
             {
-                res = Regex.Replace(item, @"(one|two|three|four|five|six|seven|eight|nine)", match =>
+                res = Regex.Replace(item, @"(?<=o)(n)(?=e)|(?<=e)(igh)(?=t)|(?<=t)(w)(?=o)|(?<=t)(hre)(?=e)|(?<=f)(ou)(?=r)|(?<=f)(iv)(?=e)|(?<=s)(i)(?=x)|(?<=s)(eve)(?=n)|(?<=n)(in)(?=e)", match =>
                 {
                     switch (match.Value)
                     {
-                        case "one": return "o1e";
-                        case "two": return "t2o";
-                        case "three": return "t3e";
-                        case "four": return "f4r";
-                        case "five": return "f5e";
-                        case "six": return "s6x";
-                        case "seven": return "s7n";
-                        case "eight": return "e8t";
-                        case "nine": return "n9e";
-                        default: return match.Value;
-                    }
-                });
-                res = Regex.Replace(res, @"(one|two|three|four|five|six|seven|eight|nine)", match =>
-                {
-                    switch (match.Value)
-                    {
-                        case "one": return "o1e";
-                        case "two": return "t2o";
-                        case "three": return "t3e";
-                        case "four": return "f4r";
-                        case "five": return "f5e";
-                        case "six": return "s6x";
-                        case "seven": return "s7n";
-                        case "eight": return "e8t";
-                        case "nine": return "n9e";
+                        case "n": return "1";
+                        case "w": return "2";
+                        case "hre": return "3";
+                        case "ou": return "4";
+                        case "iv": return "5";
+                        case "i": return "6";
+                        case "eve": return "7";
+                        case "igh": return "8";
+                        case "in": return "9";
                         default: return match.Value;
                     }
                 });
